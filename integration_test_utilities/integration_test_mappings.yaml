@@ -16,6 +16,12 @@ data_source_newrelic_alert_policy.go:
 data_source_newrelic_alert_policy_test.go:
   test: true
   product_mapping: ALERTS
+data_source_newrelic_api_access_key.go:
+  test: false
+  product_mapping: APIKS
+data_source_newrelic_api_access_key_test.go:
+  test: true
+  product_mapping: APIKS
 data_source_newrelic_application.go:
   test: false
   product_mapping: APM
@@ -32,6 +38,9 @@ data_source_newrelic_cloud_account.go:
   test: false
   product_mapping: CLOUD
 data_source_newrelic_cloud_account_test.go:
+  test: true
+  product_mapping: CLOUD
+data_source_newrelic_cloud_account_unit_test.go:
   test: true
   product_mapping: CLOUD
 data_source_newrelic_entity.go:
@@ -233,6 +242,12 @@ resource_newrelic_cloud_azure_link_account.go:
   test: false
   product_mapping: CLOUD
 resource_newrelic_cloud_azure_link_account_test.go:
+  test: true
+  product_mapping: CLOUD
+resource_newrelic_cloud_gcp_dm_integrations.go:
+  test: false
+  product_mapping: CLOUD
+resource_newrelic_cloud_gcp_dm_integrations_test.go:
   test: true
   product_mapping: CLOUD
 resource_newrelic_cloud_gcp_integrations.go:
@@ -544,6 +559,12 @@ structures_newrelic_cloud_aws_govcloud_link_account.go:
 structures_newrelic_cloud_aws_integrations.go:
   test: false
   product_mapping: CLOUD
+structures_newrelic_cloud_gcp_dm_integrations.go:
+  test: false
+  product_mapping: CLOUD
+structures_newrelic_cloud_gcp_link_account.go:
+  test: false
+  product_mapping: CLOUD
 structures_newrelic_federated_logs.go:
   test: false
   product_mapping: LOGGING_INTEGRATIONS
@@ -633,4 +654,7 @@ structures_newrelic_workflow_test.go:
   product_mapping: WORKFLOW_INTEGRATIONS
 structures_newrelic_workload.go:
   test: false
+  product_mapping: WORKLOADS
+structures_newrelic_workload_test.go:
+  test: true
   product_mapping: WORKLOADS
